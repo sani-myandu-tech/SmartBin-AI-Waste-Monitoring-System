@@ -1,1 +1,22 @@
+Model: MobileNetV2 (Transfer Learning)
 
+Training Process:
+- Phase 1: Feature extraction (base frozen)
+- Phase 2: Fine-tuning (last layers unfrozen)
+
+Preprocessing:
+- Image resizing (224x224)
+- Normalization
+- Data augmentation (flip, rotation, zoom)
+
+Evaluation:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+Export:
+- Converted to TensorFlow Lite (.tflite)
+
+Purpose:
+Used for real-time waste classification in the SmartBin system.
